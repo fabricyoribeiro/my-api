@@ -3,15 +3,15 @@ const express = require('express')
 const app = express()
 
 app.get('/produtos', (req, res) => {
-  res.send({ nome: 'Notebook', preco: 1200})
+  res.json({ nome: 'Notebook', preco: 1200})
 })
 
 app.get('/clientes', (req, res) => {
-  res.send({ nome: 'Fabricyo', cpf: 123})
+  res.json({ nome: 'Fabricyo', cpf: 123})
 })
 
 app.get('/', (req, res) => {
-  res.send({
+  res.json({
     msg: 'OK'
   })
 })
