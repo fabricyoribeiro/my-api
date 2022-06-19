@@ -7,7 +7,66 @@ var cors = require('cors')
 app.use(cors())
 
 app.get('/produtos', (req, res) => {
-  res.json({ nome: 'Notebook', preco: 1200})
+  res.json([
+    {
+    id: 1,
+    productName: "CONTROLE GAMER PS3/PS2/PC",
+    price:"30",
+    image:"https://i.postimg.cc/d1XWStfy/controle.jpg",
+},
+
+{   id: 2,
+    productName: "Linha Intelbras",
+    price:"5.50",
+    image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
+},
+
+{   id: 3,
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
+},
+
+{ id: 4,
+  productName: "Linha Intelbras",
+  price:"5.50",
+  image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
+},
+
+{ id: 5,
+  productName: "Headset HP",
+  price:"90000",
+  image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
+},
+
+{ id: 6,
+  productName: "Linha Intelbras",
+  price:"5.50",
+  image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
+},
+
+{ id: 7,
+  productName: "Headset HP",
+  price:"90000",
+  image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
+},
+{ id: 8,
+  productName: "Linha Intelbras",
+  price:"5.50",
+  image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
+},
+
+{ id: 9,
+  productName: "Headset HP",
+  price:"90000",
+  image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
+},
+
+{ id: 10,
+  productName: "Linha Intelbras",
+  price:"5.50",
+  image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
+}])
 })
 
 app.get('/clientes', (req, res) => {
