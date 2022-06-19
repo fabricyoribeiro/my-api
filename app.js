@@ -2,6 +2,10 @@
 const express = require('express')
 const app = express()
 
+var cors = require('cors')
+
+app.use(cors())
+
 app.get('/produtos', (req, res) => {
   res.json({ nome: 'Notebook', preco: 1200})
 })
