@@ -1,4 +1,4 @@
-const porta = 3003
+// const porta = 3003
 
 const express = require('express')
 const app = express()
@@ -11,6 +11,8 @@ app.get('/clientes', (req, res) => {
   res.send({ nome: 'Fabricyo', cpf: 123})
 })
 
-app.listen(porta, () => {
+const PORT = process.env.PORT || 8877
+
+app.listen(PORT, () => {
   console.log(`Servidor executando na porta ${porta}`)
 })
