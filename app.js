@@ -11,6 +11,12 @@ app.get('/clientes', (req, res) => {
   res.send({ nome: 'Fabricyo', cpf: 123})
 })
 
+app.get('/', (req, res) => {
+  res.send({
+    msg: 'OK'
+  })
+})
+
 const PORT = process.env.PORT || 8877
 
 app.listen(PORT, () => {
