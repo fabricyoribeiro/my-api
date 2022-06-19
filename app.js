@@ -12,7 +12,7 @@ app.get('/clientes', (req, res) => {
 
 app.get('/', (req, res) => {
   res.json({
-    msg: 'OK'
+    msg: 'OK OK'
   })
 })
 
